@@ -1,0 +1,421 @@
+
+:root {
+    --color-bg: #69F7BE;
+    --color-text-main: #000000;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk"; }
+  /* A continuacion comentarios los atributos del documento de CSS*/
+  html{
+  /*height y el width determinan el ancho y el alto del cuadrao que representa la etiqueta HTMl
+  tiene distintas medidas como px que es en pixeles o % porcentages que es el caso que estoy usando
+  para que la pantalla sea lo mas responsive posible*/
+    height: 100%;
+    width:90%;
+  /*Position representa la posicion de este cuadrado el caso de absoluto hace que la posicion
+  siempre este en la misma zona de la pantalla aunque se tenga que superponer a otras etiquetas*/
+    position:absolute; 
+  /*Los margin generan un espacio con el cuadrado en el que se encuentran en este caso la pantalla del pc,
+  hay ccuatro tipos segun la pared que uno desee, left,right, top y bottom*/
+    margin-left: 4%; 
+  /*El max width ara que el cuadrado ocupe el maximo de la pantalla se le colocara al hhtml padre ya que dentro de 
+  el iran todos*/
+    max-width: 100% !important;}
+
+  
+  body { 
+    position:absolute; 
+    top:0%;
+    height: 100%;
+    width:100%;
+    /*El overflow hidden recorta la etiqueta si la pantalla no lo puede mostrar evitando que la web se deforme*/
+    overflow: hidden;
+    /*Border genera un borde en este caso emos escogido el estilo groove por defecte el bordes viene en null*/
+    border: groove;
+    /*Border color nos permite seleccionar un clor para el borde*/
+    border-color: #000000;}
+
+  nav{
+    height: 100%;
+    width:100%;
+    overflow: hidden;}
+  
+  header{
+    height: 20%;
+    width:100%;
+    position:absolute; 
+    overflow: hidden;}
+
+  #logo{
+    height:100%;
+    width:15%;
+    margin:0;
+    /*El paddin es como un margin pero que en vez de generar espacio entre el elemento y el elemento que lo contiene
+    lo genera entre el y los elementos que el contiene*/
+    padding:0;
+    /*Con el display en linea hacemos que el elemento se coloque seguido de otro en vez de abajo o arriva de el*/
+    display: inline;
+    border: groove;
+    border-color: #000000;
+    /*El border tiene mas atributos que el estilo en este caso veos su tamaño en pixeles*/
+    border: 0.5px solid;}
+
+  #saludoCabecera{
+    margin:0;
+    padding:0;
+    border: 1px solid #000000; 
+    display: inline;
+    height: 100%;
+    width:84.7%;
+    position:absolute;
+    /*Color de las letras del elemento*/
+    color: #ff0080;
+    /*Color del fondo del elemento*/
+    background-color: #87CEEB;
+    /*Fuente de la familia de las letras del elemento*/
+    font-family:"Curlz MT";
+    /*Tamaño de la lineta del elemento*/
+    line-height: 1.5;
+    font-weight: bold; 
+    font-style: italic;
+    /*Centra el texto dentro del elemento*/
+    text-align: center;
+    /*Tamaño de las letras del elemento*/
+    font-size: 500%;
+    border: groove;
+    border-color: #000000;
+    border: 0.5px solid;}
+  
+  main{
+    position:absolute; 
+    top:20%;
+    /*Convierte el contenedor en un contenedor flexible*/
+    display: flex;
+    overflow: hidden;
+    height: 5.2%;
+    width:100%; 
+    border: groove;
+    border-color: #000000;
+    border: 0.5px solid;}
+  /*El punto indica una clase de elemento es decir este css puede afectar a varios elementos*/
+  .elementosMenu{
+    display: inline;  
+    flex: auto; }
+  
+  .bottomMenu{
+    height: 100%;
+    width:100%;}
+  
+  article{
+    position:absolute;
+    top:25.4%;
+    overflow: hidden;
+    border: groove;
+    border-color: #000000;
+    border: 0.5px solid;
+    height: 70%; 
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;}
+  /*este simbolo identifica un id de elemento es decir este css afecta a un solo elemento*/
+  #imagenProducto{
+    background-color: pink;  
+    margin-left:5%;
+    height: 50%; 
+    width:25%;}
+
+    #imagenProducto1{
+      background-color: pink;  
+      margin-left:10%;
+      height: 50%; 
+      width:25%;}
+
+    #compraProducto{
+      /*El float posiciona el contenedor al extremo de la direccin indicada en este caso a la izquierda siempre que tenga espacio*/
+      float:right;
+      height: 5%; 
+      width:5%;
+      background-color: black;}
+
+    #nombreProducto{
+    background-color: #87CEEB;
+    font-family:"Curlz MT";
+    margin-left:5%;   
+    height: 7%; 
+    width:80%;
+    font-size:150%;
+    border: groove;
+    border-color: #000000;
+    border: 0.5px solid;}
+
+    #nombreProducto1{
+      background-color: #87CEEB;
+      font-family:"Curlz MT";
+      margin-left:9.8%;   
+      height: 7%; 
+      width:79.9%;
+      font-size:150%;
+      border: groove;
+      border-color: #000000;
+      border: 0.1% solid;}
+
+    #descripcionProducto{
+      background-color: pink;   
+     margin-right:15%;
+      float:right;
+      font-family:cursive;
+      height: 50%; 
+      width:55%;
+      font-size:150%;}
+
+    #descripcionProducto1{
+      background-color: pink;   
+      margin-right:10%;
+      float:right;
+      font-family:cursive;
+      height: 50%; 
+      width:55%;
+      font-size:150%;}
+
+    #apuntarmeProducto{
+      float:right;
+      margin-right:3%;
+      height: 1%; 
+      width:10%;}
+
+    #profesorProducto{
+      background-color: #87CEEB;
+      height: 50%; 
+      width:31.3%;            
+      object-fit: contain;
+      margin-top:0%;  
+      font-family:"Curlz MT";
+      font-size:120%;}
+    
+    #fechaProducto{
+      background-color: #87CEEB;
+      margin-top:0%;
+      /*Deje que todos los elementos flexibles tengan la misma longitud*/
+      flex:auto;
+      display:inline;
+      /*se utiliza para especificar cómo se debe cambiar el tamaño de un <img> o <video>*/
+      object-fit: contain;
+      height: 50%; 
+      font-family:"Curlz MT";
+      width:10%;
+      font-size:120%;}
+
+    #estadoProducto{
+      background-color: #87CEEB;
+      margin-top:0%;
+      flex:auto;
+      display:inline;
+      object-fit: contain;
+      font-family:"Curlz MT";
+      height: 50%; 
+      width:10%;
+      font-size:120%;}
+
+    #duracionProducto{
+      background-color: #87CEEB;
+      margin-top:0%;
+      flex:auto;
+      display:inline;
+      font-family:"Curlz MT";
+      object-fit: contain;
+      font-size:120%;
+      height: 50%; 
+      width:10%; }
+
+    #datosProducto{
+      background-color: white;
+      margin-left:5%;  
+      height: 10%; 
+      width:80%;
+      display: flex;
+      object-fit: contain; }
+
+    #datosProducto1{
+      background-color: white;
+      margin-left:10%;  
+      height: 10%; 
+      width:80%;
+      display: flex;
+      object-fit: contain; }
+
+
+  #login{
+    background-color:  #87CEEB;
+    border:44; 
+    border-color:black;
+    position: absolute; 
+    margin-left:78%;
+    margin-top:0%;
+    border: groove;
+    border-color: #000000;
+    border: 0.5px solid;}
+
+#recordarUsuario{
+  display:inline;
+  font-family:"Brush Script MT", cursive;
+  background-color: #87CEEB;
+  color: #ff0080;}
+
+  #registro{
+    background-color: #87CEEB;
+    position: absolute; 
+    margin-left:35%;
+    margin-top:10%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-bottom:2%;
+    padding-top:2%;
+    border: groove;
+    border-color: #000000;}
+  
+  #quienesSomos{
+  background-color: grey;
+  border:1px;
+  position: absolute; 
+  margin-left:35%;
+  margin-top:2%;
+  padding-left:2%;
+  padding-right:2%;
+  padding-bottom:2%;
+  padding-top:2%;
+  border: groove;
+  border-color: #000000;}
+
+#producto{
+  background-color: white;
+  height: 96%;
+  width:100%;}
+
+  .tabla{
+    color: black;
+    border-color:black;}
+
+  #formulario{
+    overflow: hidden;
+    background-color: #87CEEB;
+    border: groove;
+    border-color:#ff0080;
+    position: absolute; 
+    margin-left:28%;
+    margin-top:1%;
+    padding-left:2%;
+    padding-right:2%;
+    padding-bottom:0.5%;
+    padding-top:0.5%;
+    height: 88%;
+    width:40%;}
+
+  .titulosRegistro{
+    font-family:"Brush Script MT", cursive;
+    color: #ff0080;
+    height: 20px;;
+    width:100%;
+    overflow: hidden;}
+
+  #nombreRegistro{
+    height: 25px;;
+    width:100%;
+    overflow: hidden;}
+
+  #edadRegistro{
+    height: 25px;;
+    overflow: hidden;
+    width:100%;   }
+
+  #contraseñaRegistro{
+    float:right;
+    overflow: hidden;
+    width:50%; }
+
+  #nickRegistro{
+    height: 25px;;
+    overflow: hidden;
+    width:100%; }
+
+  #apellidosRegistro{
+    overflow: hidden;
+    width:50%;
+    float:right;}
+
+  #correoRegistro{
+    overflow: hidden;
+    width:50%;
+    float:right;}
+
+  #telefonoRegistro{
+    height: 25px;;
+    overflow: hidden;
+    width:100%;}
+
+  #conocerRegistro{
+    overflow: hidden;
+    width:100%;}
+
+  #opinionRegistro{
+    overflow: hidden;
+    width:100%;}
+  
+  #imagen{
+    height: 100%;
+    width:100%;}
+
+  #citaYredes{
+    position:absolute;
+    top:85%;
+    left:-1.5%;
+    height: 5%;
+    width:100%;}
+
+  .elementosArticle{
+    display: inline;
+    height: 100%;
+    width:100%; }
+
+  .enlaceRedesSociales{
+    height: 100%;
+    width:2%;  }
+
+  footer{
+    background: yellow;
+    display: flex;
+    position:absolute; 
+    top:92%;
+    border: 1px solid black;
+    height: 5%;
+    width:100%;
+    background-color: grey;
+    overflow: hidden;
+    border: groove;
+    border-color: #000000;
+    border: 0.5px solid;}
+
+  aside{
+    display : inline;
+    box-sizing:border-box; }
+
+  .piePagina{
+    flex:auto;
+    display:inline;
+    object-fit: contain;
+    color: white;}
+
+  #derechos{
+    text-align: center;}
+
+  #ubicacion{
+    /*Centra el texto del contenedor pero este caso asia la izquierda del mismo*/
+    text-align: right;}
+  
+  
+  
+  
+  
